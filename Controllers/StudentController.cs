@@ -19,7 +19,7 @@ namespace nyikoStudyGroup.Controllers
             students.Add(new Models.StudentModel { _studentNumber = "", _name = "", _surname = "", _emailAddress = "" });
             students.Add(new Models.StudentModel { _studentNumber = "", _name = "", _surname = "", _emailAddress = "" });
 
-            return View();
+            return View(students);
         }
     }
 }
