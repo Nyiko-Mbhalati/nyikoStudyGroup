@@ -19,5 +19,8 @@ namespace nyikoStudyGroup.Models
 
         [Display(Name = "Email Address")]
         public string _emailAddress { get; set; }
+
+		[Display(Name = "Link to Personal Page")]
+		public string myLink { get; set; }
     }
 }
