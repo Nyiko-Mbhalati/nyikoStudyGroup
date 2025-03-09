@@ -21,6 +21,9 @@
         <th>
             @Html.DisplayNameFor(Model => Model._emailAddress)
         </th>
+        <th>
+            @Html.DisplayNameFor(Model => Model.myLink)
+        </th>
     </tr>
 
     @foreach (var item in Model)
@@ -37,6 +40,9 @@
             </th>
             <th>
                 @Html.DisplayFor(modelItem => item._emailAddress)
+            </th>
+            <th>
+                <a href="@Url.Content(item.myLink)">My Link</a>
             </th>
         </tr>
      }
